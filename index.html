@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Car Collision</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="collision.css">
+    <script src="collision.js"></script>
+  </head>
+
+  <body onload="blueMove1(),blueMove2(),blueMove3()">
+    
+    <img src="road.png" id="road" alt="road" usemap="#planetmap">
+    <img src="blue.png" id="bluecar1">
+    <img src="blue.png" id="bluecar2">
+    <img src="blue.png" id="bluecar3">
+    <img src="red.png" id="redcar1">
+    <img src="red.png" id="redcar2">
+    <img src="red.png" id="redcar3">
+    
+    <map id="planetmap" name="planetmap">
+      <area class="area" shape="rect" coords="0,0,292,600" onclick="redMove1()">
+      <area class="area" shape="rect" coords="310,0,592,600" onclick="redMove2()">
+      <area class="area" shape="rect" coords="610,0,892,600" onclick="redMove3()">
+      </map>
+  
+  </body>
+</html>
